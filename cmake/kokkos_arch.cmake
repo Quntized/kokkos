@@ -1088,7 +1088,7 @@ endfunction()
 
 #These will define KOKKOS_AMDGPU_ARCH_FLAG
 #to the corresponding flag name if ON
-foreach(PAIR IN ZIP_LISTS SUPPORTED_AMDGPU_ARCHS CORRESPONDING_AMD_FLAGS)
+foreach(PAIR IN ZIP_LISTS SUPPORTED_AMD_ARCHS CORRESPONDING_AMD_FLAGS)
   check_amdgpu_arch(${PAIR_0} ${PAIR_1})
 endforeach()
 
