@@ -118,10 +118,10 @@ void test_ref_counted_data_handle() {
 }
 TEST(TEST_CATEGORY, AtomicAccessor_Constexpr_Error) {
   constexpr Kokkos::Impl::AtomicAccessorRelaxed<float> atomic_acc{};
-  static float dummy_data[10] = {}; 
+  static float dummy_data[10] = {};
   constexpr float* dummy_ptr = dummy_data;
-  constexpr float* offset_ptr = atomic_acc.offset(dummy_ptr, 5); 
-  (void)offset_ptr; 
+  constexpr float* offset_ptr = atomic_acc.offset(dummy_ptr, 5);
+  (void)offset_ptr;
 }
 // clang-format on
 
