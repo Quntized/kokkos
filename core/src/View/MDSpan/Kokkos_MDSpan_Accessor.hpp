@@ -244,7 +244,7 @@ struct AtomicAccessorRelaxed {
   KOKKOS_FUNCTION explicit operator default_accessor<OtherElementType>() const {
     return default_accessor<OtherElementType>{};
   }
-  
+
   KOKKOS_FUNCTION
   constexpr reference access(
 #ifndef KOKKOS_ENABLE_OPENACC
